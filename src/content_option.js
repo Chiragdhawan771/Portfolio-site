@@ -1,0 +1,245 @@
+const logotext = "Chirag";
+const meta = {
+  title: "Chirag Dhawan",
+  description: "I'm Chirag Dhawan, a Mobile & Web Full-Stack Developer.",
+};
+
+const introdata = {
+  title: "I'm Chirag Dhawan",
+  animated: {
+    first: "I love coding",
+    second: "I code cool websites",
+    third: "I develop mobile apps",
+  },
+  description:
+    "Passionate about crafting clean, maintainable code, solving complex problems, and delivering user-friendly digital solutions.",
+  your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+};
+
+const dataabout = {
+  title: "A bit about my self",
+  aboutme: `A full-stack developer passionate about building smart, scalable, and user-centric digital experiences. I specialize in creating cross-platform mobile apps with React Native and robust backend systems using Node.js.
+
+My work focuses on delivering real-time, high-performance applications, from crafting seamless UIs and optimizing performance to designing efficient APIs. I’ve also integrated AI-powered features, including pose detection using TensorFlow and AI-driven chatbots with voice interaction, enhancing modern apps with smarter and more interactive experiences.
+
+I enjoy working with technologies like Express.js, MongoDB, and Firebase while continuously exploring new ways to make applications intuitive, efficient, and impactful.
+
+Currently, I’m working on projects that merge mobility, intelligence, and real-time interactivity, pushing the boundaries of what apps can do.`,
+};
+const worktimeline = [
+  {
+    jobtitle: "Full-Stack Developer",
+    where: "Confidential Organization Projects",
+    date: "2025",
+  },
+  {
+    jobtitle: "Mobile Developer",
+    where: "Hostel Management System",
+    date: "2024",
+  },
+  {
+    jobtitle: "React Native Developer",
+    where: "Chat & Voice Integrated Application",
+    date: "2024",
+  },
+  {
+    jobtitle: "Full-Stack Developer",
+    where: "Task Management Platform",
+    date: "2024",
+  },
+  {
+    jobtitle: "AI Integration Developer",
+    where: "Pose Detection using TensorFlow",
+    date: "2024",
+  },
+  {
+    jobtitle: "Full-Stack Developer",
+    where: "E-Commerce Mobile Application",
+    date: "2023",
+  },
+];
+
+const skills = [
+  {
+    name: "React Native",
+    value: 90,
+  },
+  {
+    name: "Expo",
+    value: 85,
+  },
+  {
+    name: "JavaScript (ES6+)",
+    value: 88,
+  },
+  {
+    name: "TypeScript",
+    value: 80,
+  },
+  {
+    name: "React.js",
+    value: 82,
+  },
+  {
+    name: "Node.js & Express",
+    value: 80,
+  },
+  {
+    name: "MongoDB",
+    value: 78,
+  },
+  {
+    name: "UI/UX Design",
+    value: 75,
+  },
+  {
+    name: "Figma & Design Tools",
+    value: 75,
+  },
+  {
+    name: "AI & ML Tools (TensorFlow, AI Chatbots)",
+    value: 70,
+  },
+  {
+    name: "Python",
+    value: 60,
+  },
+];
+
+const services = [
+  {
+    title: "UI & UX Design",
+    description:
+      "Creating visually appealing, user-focused interfaces that enhance engagement and usability. I design intuitive digital experiences optimized for both mobile and web platforms, ensuring seamless user journeys and consistent brand identity.",
+  },
+  {
+    title: "Figma Prototyping & Design Systems",
+    description:
+      "Designing interactive prototypes, wireframes, and scalable design systems using Figma. I turn ideas into visually consistent, user-friendly designs that streamline the development process and enhance collaboration.",
+  },
+  {
+    title: "React Native Mobile Apps",
+    description:
+      "Building high-performance, cross-platform mobile applications using React Native. I specialize in crafting responsive, real-time, and feature-rich apps that deliver smooth experiences, integrating intelligent functionalities to make them smarter and more interactive.",
+  },
+  {
+    title: "MERN & Node.js Web Applications",
+    description:
+      "Developing secure, scalable, and efficient full-stack web solutions using the MERN stack (MongoDB, Express.js, React.js, Node.js). From dynamic frontends to powerful backends and APIs, I create future-ready web applications that meet modern business demands.",
+  },
+  {
+    title: "AI-Powered Features & Integrations",
+    description:
+      "Enhancing applications with advanced AI capabilities, including real-time pose detection, AI-driven chatbots, voice-enabled interactions, and data-driven insights. I integrate machine learning models to create intelligent, context-aware, and engaging digital experiences.",
+  },
+  {
+    title: "Full-Stack Digital Solutions",
+    description:
+      "Providing end-to-end development services that combine sleek user interfaces with robust backend systems. Whether it’s mobile, web, or AI-enhanced solutions, I deliver scalable, reliable, and performance-optimized products tailored to your needs.",
+  },
+];
+
+const dataportfolio = [
+  {
+    img: require("./assets/images/Projects/chatBot.png"),
+    description:
+      "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+  },
+  {
+    img: require(".//assets/images/Projects/Hostel-management.png"),
+    description:
+      "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+  },
+  {
+    img: "https://picsum.photos/400/?grayscale",
+    description:
+      "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+  },
+  {
+    img: "https://picsum.photos/400/600/?grayscale",
+    description:
+      "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+  },
+  {
+    img: "https://picsum.photos/400/300/?grayscale",
+    description:
+      "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+  },
+  {
+    img: "https://picsum.photos/400/700/?grayscale",
+    description:
+      "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+  },
+
+  {
+    img: "https://picsum.photos/400/600/?grayscale",
+    description:
+      "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+  },
+  {
+    img: "https://picsum.photos/400/300/?grayscale",
+    description:
+      "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+  },
+  {
+    img: "https://picsum.photos/400/?grayscale",
+    description:
+      "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+  },
+  {
+    img: "https://picsum.photos/400/550/?grayscale",
+    description:
+      "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+  },
+  {
+    img: "https://picsum.photos/400/?grayscale",
+    description:
+      "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+  },
+  {
+    img: "https://picsum.photos/400/700/?grayscale",
+    description:
+      "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+  },
+];
+
+const contactConfig = {
+  YOUR_EMAIL: "dhawanchirag274@gmail.com",
+  YOUR_FONE: "+91 9877351711",
+  description:
+    "I'm always excited to connect with people who share a passion for building smart, scalable, and user-centric digital experiences. Whether you're looking to develop a cross-platform mobile app, a powerful web platform, or integrate AI-powered features like real-time tracking and intelligent chatbots, I'd love to collaborate. Feel free to reach out — let's turn your ideas into seamless, high-performing solutions together. ",
+  // creat an emailjs.com account
+  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+  YOUR_SERVICE_ID: "service_o20c6bv",
+  YOUR_TEMPLATE_ID: "template_hk4o1gy",
+  YOUR_USER_ID: "Wi_iUXBuJS-sy_DSB",
+};
+
+const socialprofils = {
+  github: "https://github.com",
+  linkedin: "https://linkedin.com",
+};
+export {
+  meta,
+  dataabout,
+  dataportfolio,
+  worktimeline,
+  skills,
+  services,
+  introdata,
+  contactConfig,
+  socialprofils,
+  logotext,
+};
