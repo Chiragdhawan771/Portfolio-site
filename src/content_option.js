@@ -141,79 +141,38 @@ const services = [
 
 const dataportfolio = [
   {
+    img: require("./assets/images/Projects/News1.png"),
+    description:
+      "A React Native + Expo news app that fetches real-time headlines, supports category-based browsing, and offers a clean, responsive UI for smooth reading.",
+    link: "#",
+  },
+  {
     img: require("./assets/images/Projects/chatBot.png"),
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
+      "An AI-powered chatbot built with React Native and Expo, designed to answer queries instantly, manage FAQs, and deliver a seamless conversational experience.",
     link: "#",
   },
   {
-    img: require(".//assets/images/Projects/Hostel-management.png"),
+    img: require("./assets/images/Projects/Hostel-management.png"),
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
+      "A comprehensive hostel management system made with React Native and Expo, featuring room booking, user and admin dashboards, and request tracking.",
     link: "#",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
+    img: require("./assets/images/Projects/coffeeShop.png"),
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
+      "A coffee shop ordering app built using React Native and Expo, enabling users to browse menus, customize drinks, and place instant takeaway orders with ease.",
     link: "#",
   },
   {
-    img: "https://picsum.photos/400/600/?grayscale",
+    img: require("./assets/images/Projects/Vitalwatch.png"),
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-
-  {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/550/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
+      "A health monitoring app developed with React Native and Expo that tracks vital signs, provides real-time health alerts, and helps users stay on top of their wellness.",
     link: "#",
   },
 ];
+
+
 
 const contactConfig = {
   YOUR_EMAIL: "dhawanchirag274@gmail.com",
@@ -228,8 +187,8 @@ const contactConfig = {
 };
 
 const socialprofils = {
-  github: "https://github.com",
-  linkedin: "https://linkedin.com",
+  github: "https://github.com/chiragdhawan771",
+  // linkedin: "https://linkedin.com",
 };
 export {
   meta,
