@@ -142,35 +142,41 @@ const services = [
 const dataportfolio = [
   {
     img: require("./assets/images/Projects/News1.png"),
+    shortDescription: "Real-time news with category-based browsing.",
     description:
       "A React Native + Expo news app that fetches real-time headlines, supports category-based browsing, and offers a clean, responsive UI for smooth reading.",
     link: "#",
   },
   {
     img: require("./assets/images/Projects/chatBot.png"),
+    shortDescription: "AI chatbot for instant Q&A and FAQs.",
     description:
       "An AI-powered chatbot built with React Native and Expo, designed to answer queries instantly, manage FAQs, and deliver a seamless conversational experience.",
     link: "#",
   },
   {
     img: require("./assets/images/Projects/Hostel-management.png"),
+    shortDescription: "Manage hostel bookings and dashboards easily.",
     description:
       "A comprehensive hostel management system made with React Native and Expo, featuring room booking, user and admin dashboards, and request tracking.",
     link: "#",
   },
   {
     img: require("./assets/images/Projects/coffeeShop.png"),
+    shortDescription: "Order coffee quickly with customizations.",
     description:
       "A coffee shop ordering app built using React Native and Expo, enabling users to browse menus, customize drinks, and place instant takeaway orders with ease.",
     link: "#",
   },
   {
     img: require("./assets/images/Projects/Vitalwatch.png"),
+    shortDescription: "Track vital signs and get health alerts.",
     description:
       "A health monitoring app developed with React Native and Expo that tracks vital signs, provides real-time health alerts, and helps users stay on top of their wellness.",
     link: "#",
   },
 ];
+
 
 
 
