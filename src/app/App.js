@@ -8,7 +8,7 @@ import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
 import AnimatedCursor  from "../hooks/AnimatedCursor";
-import "./App.css";
+import "../index.css";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -26,15 +26,19 @@ export default function App() {
         <AnimatedCursor
           innerSize={15}
           outerSize={15}
-          color="255, 255 ,255"
-          outerAlpha={0.4}
+          color="0, 210, 255"
+          outerAlpha={0.2}
           innerScale={0.7}
           outerScale={5}
         />
       </div>
       <ScrollToTop>
-        <Headermain />
-        <AppRoutes />
+        <div className="app-container">
+          <Headermain />
+          <div className="main-card">
+            <AppRoutes />
+          </div>
+        </div>
       </ScrollToTop>
     </Router>
   );

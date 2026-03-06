@@ -1,71 +1,81 @@
-import React, { useState } from "react";
-import "./style.css";
-import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
-import { logotext ,socialprofils } from "../content_option";
-import Themetoggle from "../components/themetoggle";
+import React, { useState, useEffect } from "react";
+import { FiHome, FiBriefcase, FiUser, FiMail } from "react-icons/fi";
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const [activeSection, setActiveSection] = useState("home");
 
-  const handleToggle = () => {
-    setActive(!isActive);
-    document.body.classList.toggle("ovhidden");
+  const navLinks = [
+    { id: "home", icon: <FiHome /> },
+    { id: "about", icon: <FiUser /> },
+    { id: "portfolio", icon: <FiBriefcase /> },
+    { id: "contact", icon: <FiMail /> },
+  ];
+
+  const handleScrollTo = (id) => {
+    setActiveSection(id);
+    const element = document.getElementById(id);
+    if (element) {
+      const container = document.querySelector(".main-scroll-container");
+      if (container) {
+        container.scrollTo({
+          top: element.offsetTop,
+          behavior: "smooth"
+        });
+      } else {
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    }
   };
 
-  return (
-    <>
-      <header className="fixed-top site__header">
-        <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
-            {logotext}
-          </Link>
-          <div className="d-flex align-items-center">
-          <Themetoggle />
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
-            {!isActive ? <VscClose /> : <VscGrabber />}
-          </button>
-          
-          </div>
-        </div>
-
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
-          <div className="bg__menu h-100">
-            <div className="menu__wrapper">
-              <div className="menu__container p-3">
-                <ul className="the_menu">
-                  <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
-                  </li>
-                  <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
-                  </li>
-                  <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.twitter}>Twitter</a>
-            </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
-          </div>
-        </div>
-      </header>
-      <div className="br-top"></div>
-      <div className="br-bottom"></div>
-      <div className="br-left"></div>
-      <div className="br-right"></div>
+  useEffect(() => {
+    const handleScroll = () => {
+      const container = document.querySelector(".main-scroll-container") || window;
+      const scrollY = container.scrollY || container.scrollTop;
       
-    </>
+      navLinks.forEach((link) => {
+        const section = document.getElementById(link.id);
+        if (section) {
+          const sectionTop = section.offsetTop - 100;
+          const sectionHeight = section.offsetHeight;
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            setActiveSection(link.id);
+          }
+        }
+      });
+    };
+
+    const scrollContainer = document.querySelector(".main-scroll-container");
+    if (scrollContainer) {
+       scrollContainer.addEventListener("scroll", handleScroll);
+    } else {
+       window.addEventListener("scroll", handleScroll);
+    }
+   
+
+    return () => {
+       if(scrollContainer){
+         scrollContainer.removeEventListener("scroll", handleScroll);
+       } else {
+         window.removeEventListener("scroll", handleScroll);
+       }
+    };
+  }, []);
+
+  return (
+    <div className="glass-sidebar fade-in">
+      {navLinks.map((link) => (
+        <div
+          key={link.id}
+          className={`sidebar-icon ${activeSection === link.id ? "active" : ""}`}
+          onClick={() => handleScrollTo(link.id)}
+        >
+          {link.icon}
+        </div>
+      ))}
+    </div>
   );
 };
 

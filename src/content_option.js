@@ -193,7 +193,7 @@ const contactConfig = {
 };
 
 const socialprofils = {
-  github: "https://github.com/chiragdhawan771",
+  // github: "https://github.com/chiragdhawan771",
   // linkedin: "https://linkedin.com",
 };
 export {
