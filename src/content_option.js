@@ -5,26 +5,27 @@ const meta = {
 };
 
 const introdata = {
-  title: "I'm Chirag Dhawan",
+  title: "Hi, I'm Chirag",
+  role: "Full Stack Developer | Mobile & Web Developer",
   animated: {
     first: "I love coding",
     second: "I code cool websites",
     third: "I develop mobile apps",
   },
   description:
-    "Passionate about crafting clean, maintainable code, solving complex problems, and delivering user-friendly digital solutions.",
+    "I build modern, scalable mobile applications and web platforms using technologies like React Native, Flutter, MERN stack, and NestJS. I enjoy creating high-performance applications with clean architecture and great user experience.\n\nI specialize in developing end-to-end solutions — from designing responsive frontends to building powerful backend APIs and integrating cloud services.",
   your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
 const dataabout = {
   title: "A bit about my self",
-  aboutme: `A full-stack developer passionate about building smart, scalable, and user-centric digital experiences. I specialize in creating cross-platform mobile apps with React Native and robust backend systems using Node.js.
+  aboutme: `I am a React Native and Frontend Developer with experience building mobile apps and web platforms.
 
-My work focuses on delivering real-time, high-performance applications, from crafting seamless UIs and optimizing performance to designing efficient APIs. I’ve also integrated AI-powered features, including pose detection using TensorFlow and AI-driven chatbots with voice interaction, enhancing modern apps with smarter and more interactive experiences.
+I specialize in building scalable applications, API integrations, and modern UI/UX experiences.
 
-I enjoy working with technologies like Express.js, MongoDB, and Firebase while continuously exploring new ways to make applications intuitive, efficient, and impactful.
+With continuous years of hands-on experience, I enjoy working with technologies like React, React Native, Expo, JavaScript, TypeScript, Node.js, and MongoDB. My work focuses on delivering real-time, high-performance applications that offer intuitive user interfaces and efficient backend interactions.
 
-Currently, I’m working on projects that merge mobility, intelligence, and real-time interactivity, pushing the boundaries of what apps can do.`,
+I genuinely enjoy tackling projects that merge mobility, intelligence, and real-time interactivity, constantly pushing the boundaries of what applications can do.`,
 };
 const worktimeline = [
   {
@@ -101,8 +102,24 @@ const skills = [
     value: 70,
   },
   {
-    name: "Python",
-    value: 60,
+    name: "Next.js",
+    value: 85,
+  },
+  {
+    name: "NestJS",
+    value: 80,
+  },
+  {
+    name: "Flutter",
+    value: 75,
+  },
+  {
+    name: "AWS",
+    value: 70,
+  },
+  {
+    name: "Azure",
+    value: 70,
   },
 ];
 
@@ -141,39 +158,119 @@ const services = [
 
 const dataportfolio = [
   {
+    id: "news-app",
+    category: "mobile",
     img: require("./assets/images/Projects/News1.png"),
+    title: "Real-Time News App",
     shortDescription: "Real-time news with category-based browsing.",
     description:
       "A React Native + Expo news app that fetches real-time headlines, supports category-based browsing, and offers a clean, responsive UI for smooth reading.",
     link: "#",
   },
   {
+    id: "chatbot-app",
+    category: "mobile",
     img: require("./assets/images/Projects/chatBot.png"),
+    title: "AI Chatbot Assistant",
     shortDescription: "AI chatbot for instant Q&A and FAQs.",
     description:
       "An AI-powered chatbot built with React Native and Expo, designed to answer queries instantly, manage FAQs, and deliver a seamless conversational experience.",
     link: "#",
   },
   {
+    id: "hostel-app",
+    category: "mobile",
     img: require("./assets/images/Projects/Hostel-management.png"),
+    title: "Hostel Management",
     shortDescription: "Manage hostel bookings and dashboards easily.",
     description:
       "A comprehensive hostel management system made with React Native and Expo, featuring room booking, user and admin dashboards, and request tracking.",
     link: "#",
   },
   {
+    id: "coffee-app",
+    category: "mobile",
     img: require("./assets/images/Projects/coffeeShop.png"),
+    title: "Coffee Shop Order App",
     shortDescription: "Order coffee quickly with customizations.",
     description:
       "A coffee shop ordering app built using React Native and Expo, enabling users to browse menus, customize drinks, and place instant takeaway orders with ease.",
     link: "#",
   },
   {
+    id: "vitalwatch-app",
+    category: "mobile",
     img: require("./assets/images/Projects/Vitalwatch.png"),
+    title: "VitalWatch Monitor",
     shortDescription: "Track vital signs and get health alerts.",
     description:
       "A health monitoring app developed with React Native and Expo that tracks vital signs, provides real-time health alerts, and helps users stay on top of their wellness.",
     link: "#",
+  },
+
+  {
+    id: "kanwar-car-care",
+    category: "web",
+    img: require("./assets/websites/kanwarcarcare.png"),
+    images: [
+      require("./assets/websites/kanwarcarcare.png"),
+      require("./assets/websites/kanwarcarcare1.png"),
+      require("./assets/websites/kanwarcarcare2.png"),
+      require("./assets/websites/kanwarcarcare3.png"),
+    ],
+    title: "Kanwar Car Care",
+    shortDescription: "Automotive service web platform.",
+    description: "A comprehensive web application for an automotive service center. Includes a public-facing site (kanwarcarcare.com) and a dedicated admin panel (office.kanwarcarcare.com) for managing appointments and services.",
+    link: "https://kanwarcarcare.com",
+    adminLink: "https://office.kanwarcarcare.com",
+    tech: ["Next.js", "React.js"],
+  },
+  {
+    id: "luxury-lounge-salon",
+    category: "web",
+    img: require("./assets/websites/luxurylounge.png"),
+    images: [
+      require("./assets/websites/luxurylounge.png"),
+      require("./assets/websites/luxurylounge1.png"),
+      require("./assets/websites/luxurylounge2.png"),
+      require("./assets/websites/luxurylounge3.png"),
+    ],
+    title: "Luxury Lounge Salon Academy",
+    shortDescription: "Salon and beauty academy website.",
+    description: "A digital presence for a salon and beauty academy. Features the main website (luxuryloungesalonacademy.com) and an administrative dashboard (admin.luxuryloungesalonacademy.com) for salon management.",
+    link: "https://luxuryloungesalonacademy.com",
+    adminLink: "https://admin.luxuryloungesalonacademy.com",
+    tech: ["Next.js", "React.js"],
+  },
+  {
+    id: "alpha-akki",
+    category: "web",
+    img: require("./assets/websites/AlphaAkki.png"),
+    images: [
+      require("./assets/websites/AlphaAkki.png"),
+      require("./assets/websites/AlphaAkki1.png"),
+    ],
+    title: "Alpha Akki",
+    shortDescription: "Professional web platform.",
+    description: "A modern, responsive website built for Alpha Akki, showcasing professional services with an elegant and clean user interface.",
+    link: "https://alphaakki.com",
+    tech: ["Next.js"],
+  },
+  {
+    id: "proclean-tauranga",
+    category: "web",
+    img: require("./assets/websites/procleantauranga.png"),
+    images: [
+      require("./assets/websites/procleantauranga.png"),
+      require("./assets/websites/procleantaugranga1.png"),
+      require("./assets/websites/procleantaugranga2.png"),
+      require("./assets/websites/procleantaugranga3.png"),
+    ],
+    title: "ProClean Tauranga",
+    shortDescription: "Cleaning services business website.",
+    description: "A professional service website for ProClean Tauranga, allowing users to discover cleaning services, view service areas, and request quotes online.",
+    link: "https://www.procleantauranga.com/",
+    tech: ["Next.js"],
   },
 ];
 

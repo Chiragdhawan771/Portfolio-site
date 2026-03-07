@@ -15,25 +15,16 @@ const Headermain = () => {
     setActiveSection(id);
     const element = document.getElementById(id);
     if (element) {
-      const container = document.querySelector(".main-scroll-container");
-      if (container) {
-        container.scrollTo({
-          top: element.offsetTop,
-          behavior: "smooth"
-        });
-      } else {
-        window.scrollTo({
-          top: element.offsetTop,
-          behavior: "smooth",
-        });
-      }
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: "smooth",
+      });
     }
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      const container = document.querySelector(".main-scroll-container") || window;
-      const scrollY = container.scrollY || container.scrollTop;
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
       
       navLinks.forEach((link) => {
         const section = document.getElementById(link.id);
@@ -47,20 +38,10 @@ const Headermain = () => {
       });
     };
 
-    const scrollContainer = document.querySelector(".main-scroll-container");
-    if (scrollContainer) {
-       scrollContainer.addEventListener("scroll", handleScroll);
-    } else {
-       window.addEventListener("scroll", handleScroll);
-    }
-   
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-       if(scrollContainer){
-         scrollContainer.removeEventListener("scroll", handleScroll);
-       } else {
-         window.removeEventListener("scroll", handleScroll);
-       }
+       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
